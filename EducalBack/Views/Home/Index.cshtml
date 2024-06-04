@@ -1,0 +1,324 @@
+﻿@model HomeVM
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="body-overlay "></div>
+<div class="sidebar__area ">
+    <div class="top">
+        <div class="logo">
+            <img src="https://html.hixstudio.net/educal/educal/assets/img/logo/logo.png" alt="">
+        </div>
+        <i class="close fa-solid fa-times"></i>
+    </div>
+    <ul class="bottom">
+        <li>
+            <a href="">Home</a><i class="leftBtn fa-solid fa-chevron-left"></i>
+            <ul class="subMenu">
+                <li><a href="./index.html">Home Style 1</a></li>
+                <li><a href="./index.html">Home Style 2</a></li>
+                <li><a href="./index.html">Home Style 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Courses</a><i class="leftBtn fa-solid fa-chevron-left"></i>
+            <ul class="subMenu">
+                <li><a href="./courses.html">Courses</a></li>
+                <li><a href="./courses.html">Courses List</a></li>
+                <li><a href="./courses.html">Course Sidebar</a></li>
+                <li><a href="./courses.html">Course Details</a></li>
+            </ul>
+        </li>
+        <li><a href="">Blog</a><i class="leftBtn fa-solid fa-chevron-left"></i></li>
+        <li><a href="">Pages</a><i class="leftBtn fa-solid fa-chevron-left"></i></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <form action="">
+        <input placeholder="Search..." type="text">
+        <i class="searchIcon fa-solid fa-magnifying-glass"></i>
+    </form>
+    <i class="cartIcon fa-solid fa-cart-shopping">
+        <span>3</span>
+    </i>
+</div>
+
+
+<main>
+    <section id="access">
+        <div class="shape">
+            <img class="pink-circle" src="https://ng-educal-by.netlify.app/assets/img/shape/hero/hero-1-circle.png"
+                 alt="">
+            <img class="circle-1" src="https://ng-educal-by.netlify.app/assets/img/shape/hero/hero-1-circle-2.png"
+                 alt="">
+            <img class="circle-2" src="https://ng-educal-by.netlify.app/assets/img/shape/hero/hero-1-dot-2.png"
+                 alt="">
+        </div>
+        <div class="container">
+            <div class="content">
+                <h3 class="">
+                    <span class="text">Access 2700+</span>
+                    <span class="yellow-shape">
+                        Online <img src="https://ng-educal-by.netlify.app/assets/img/shape/yellow-bg.png" alt="">
+                    </span>
+                    Tutorial From Top Instructor.
+                </h3>
+                <p>Meet university,and cultural institutions, who'll <br> share their experience.</p>
+                <a href="">View all course</a>
+            </div>
+            <div class="all">
+                <div class="image">
+                    <div class="hero-shape">
+                        <img class="hero-dot"
+                             src="https://ng-educal-by.netlify.app/assets/img/shape/hero/hero-1-dot.png" alt="">
+                        <img class="hero-circle"
+                             src="https://ng-educal-by.netlify.app/assets/img/shape/hero/hero-1-circle-3.png" alt="">
+                        <img class="circle"
+                             src="https://ng-educal-by.netlify.app/assets/img/shape/hero/hero-1-circle-4.png" alt="">
+                    </div>
+                    <img src="https://ng-educal-by.netlify.app/assets/img/hero/hero-1.jpg" alt="">
+                    <div class="quote-animation">
+                        <span>Tomorrow is our</span>
+                        <h4>“When I Grow Up” Spirit Day!</h4>
+                    </div>
+                </div>
+                <div class="hero-thumb">
+                    <img src="https://ng-educal-by.netlify.app/assets/img/hero/hero-sm-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="explore">
+        <div class="container">
+            <div class="title">
+                <h2>
+                    Explore <br> Our <span>
+                        Popular <img src="https://ng-educal-by.netlify.app/assets/img/shape/yellow-bg-2.png"
+                                     alt="">
+                    </span>Courses
+                </h2>
+                <a href="">
+                    View all Category
+                    <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="boxes">
+                @foreach (var item in Model.Categories)
+                {
+                    <div class="box">
+                        <img src="~/assets/img/@item.Image" style="width: 40px; height: 40px; margin-right: 20px; background-color: transparent;" />
+                        <div class="text">
+                            <h4>@item.Name</h4>
+                            <p>@item.Description</p>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </section>
+    <section id="courses">
+        <div class="container">
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <span>Free</span>
+                        <h3>Germany Foundation <br> Document</h3>
+                        <a href="">View Courses</a>
+                        <img src="https://ng-educal-by.netlify.app/assets/img/banner/banner-img-1.png" alt="">
+                    </div>
+                </div>
+                <div class="card"
+                     style="background: url(https://ng-educal-by.netlify.app/assets/img/banner/banner-bg-2.jpg) center center / cover no-repeat;">
+                    <div class="content">
+                        <span style="background: rgb(255, 101, 46);">new</span>
+                        <h3>Online Courses <br> From Eduka University</h3>
+                        <a href="">Find Out More</a>
+                        <img src="https://ng-educal-by.netlify.app/assets/img/banner/banner-img-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="trending">
+        <div class="container">
+
+            <div class="title">
+                <h3>
+                    Find the Right<br>Online <span>
+                        Course <img src="https://ng-educal-by.netlify.app/assets/img/shape/yellow-bg.png" alt="">
+                    </span> for
+                    you
+                </h3>
+                <p class="d-none">You don't have to struggle alone, you've got our assistance and help.</p>
+                <ul class="tablist">
+                    <li class="categoryButton" data-id="0">See All</li>
+                    @foreach (var item in Model.Categories.Take(5))
+                    {
+                        <li class="categoryButton" data-id="@item.Id">@item.Name</li>
+
+                    }
+                </ul>
+            </div>
+
+            <div class="categoryCourseCardsWrapper cards">
+                @foreach (var item in Model.Courses)
+                {
+                    <div class="card popular featuredCard" data-id="@item.CategoryId">
+                        <div class="img">
+                            <img src="~/assets/img/@item.CourseImages.FirstOrDefault(m=>m.IsMain)?.Name" alt="">
+                            <span class="art">@item.Name</span>
+                        </div>
+                        <div class="content">
+                            <div class="lesson">
+                                <span><i class="fa-solid fa-book"></i> 43 Lesson</span>
+                                <span><i class="fa-solid fa-star"></i>4.5 (44)</span>
+                            </div>
+                            <a href=""> @item.Description</a>
+                            <a href=""> @item.CategoryId</a>
+
+                            <div class="teacher">
+                                <img src="https://ng-educal-by.netlify.app/assets/img/course/teacher/teacher-1.jpg"
+                                     alt="">
+                                <p>Jim Séchen</p>
+                            </div>
+                            <div class="price">
+                                <span>$@item.Price.ToString(item.Price % 1 == 0 ? "0" : "0.00") <del>$33.00</del></span>
+                                <a href=""> Know Details <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </section>
+    <section id="current">
+        <div class="container">
+            <div class="title">
+                <h4>
+                    Current <span>
+                        Events<img src="https://ng-educal-by.netlify.app/assets/img/shape/yellow-bg.png"
+                                   alt="">
+                    </span>
+                </h4>
+                <p>We found 13 events available for you.</p>
+            </div>
+            <div class="items">
+                <div class="item">
+                    <div class="meta">
+                        <span>Jun 14, 2022</span>
+                        <span>12:00 am - 2:30 pm</span>
+                        <span>New York</span>
+                        <a href="">Digital transformation conference</a>
+                    </div>
+                    <a href=""> View More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div class="item">
+                    <div class="meta">
+                        <span>April 10, 2022</span>
+                        <span>9:00 am - 5:00 pm</span>
+                        <span>Mindahan</span>
+                        <a href="">World education day conference</a>
+                    </div>
+                    <a href=""> View More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div class="item">
+                    <div class="meta">
+                        <span>July 16, 2022</span>
+                        <span>10:30 am - 1:30 pm</span>
+                        <span>Weedpatch</span>
+                        <a href="">Foundations of global health</a>
+                    </div>
+                    <a href=""> View More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div class="item">
+                    <div class="meta">
+                        <span>March 24, 2022</span>
+                        <span>10:30 am - 12:00 pm</span>
+                        <span>Lnland</span>
+                        <a href="">Business creativity workshops</a>
+                    </div>
+                    <a href=""> View More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="simple">
+        <div class="container">
+            <div class="title">
+                <h4>
+                    Simple <br> All Inclusive <span>
+                        Pricing <img src="https://ng-educal-by.netlify.app/assets/img/shape/yellow-bg.png" alt="">
+                    </span>
+                </h4>
+                <p>No contracts. No surprise fees.</p>
+                <button class="monthly active">Monthly plan</button>
+                <button class="annual">Annual Plan</button>
+            </div>
+            <div class="teams tabContent">
+                <div class="team" style="height: 440px;">
+                    <h3>Gold</h3>
+                    <p>Perfect for small marketing teams</p>
+                    <h4>$59<span>.99 / annually</span></h4>
+                    <div class="all">
+                        <span><i class="fa-solid fa-check"></i>Course Discussions</span>
+                        <span><i class="fa-solid fa-check"></i>Content Library</span>
+                        <span><i class="fa-solid fa-check"></i>1-hour Mentorship</span>
+                    </div>
+                    <a href="">Get Started</a>
+                </div>
+                <div class="team">
+                    <span class="offer">Best Value</span>
+                    <h3>Diamond</h3>
+                    <p>Perfect for small marketing teams</p>
+                    <h4>$99<span>.99 / annually</span></h4>
+                    <div class="all">
+                        <span><i class="fa-solid fa-check"></i>Course Discussions</span>
+                        <span><i class="fa-solid fa-check"></i>Content Library</span>
+                        <span><i class="fa-solid fa-check"></i>1-hour Mentorship</span>
+                        <span><i class="fa-solid fa-check"></i>Online Course</span>
+                    </div>
+                    <a class="started" href="">Get Started</a>
+                </div>
+            </div>
+            <div class="teams tabContent" style="display: none;">
+                <div class="team" style="height: 440px;">
+                    <h3>Gold</h3>
+                    <p>Perfect for small marketing teams</p>
+                    <h4>$159<span>.99 / annually</span></h4>
+                    <div class="all">
+                        <span><i class="fa-solid fa-check"></i>Course Discussions</span>
+                        <span><i class="fa-solid fa-check"></i>Content Library</span>
+                        <span><i class="fa-solid fa-check"></i>1-hour Mentorship</span>
+                    </div>
+                    <a href="">Get Started</a>
+                </div>
+                <div class="team">
+                    <span class="offer">Best Value</span>
+                    <h3>Diamond</h3>
+                    <p>Perfect for small marketing teams</p>
+                    <h4>$99<span>.99 / annually</span></h4>
+                    <div class="all">
+                        <span><i class="fa-solid fa-check"></i>Course Discussions</span>
+                        <span><i class="fa-solid fa-check"></i>Content Library</span>
+                        <span><i class="fa-solid fa-check"></i>1-hour Mentorship</span>
+                        <span><i class="fa-solid fa-check"></i>Online Course</span>
+                    </div>
+                    <a class="started" href="">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="help">
+        <div class="container">
+            <div class="inner">
+                <h3>You can be your own Guiding star with our help</h3>
+                <a href="">Get Started</a>
+                <div class="img">
+                    <img src="https://ng-educal-by.netlify.app/assets/img/cta/cta-shape.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+

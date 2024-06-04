@@ -1,0 +1,69 @@
+﻿<Properties StartupConfiguration="{B43B57F7-B47D-4C98-83F3-C93E47DFF713}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EducalBack/Areas/Admin/Controllers/UserController.cs">
+    <Files>
+      <File FileName="EducalBack/Areas/Admin/Controllers/UserController.cs" Line="92" Column="46" />
+      <File FileName="EducalBack/Areas/Admin/Views/User/Index.cshtml" Line="5" Column="31" />
+      <File FileName="EducalBack/ViewModels/Users/UserRoleVM.cs" Line="9" Column="16" />
+      <File FileName="EducalBack/Areas/Admin/Views/Shared/_Layout.cshtml" Line="75" Column="11" />
+      <File FileName="EducalBack/Areas/Admin/Views/User/AddRole.cshtml" Line="12" Column="70" />
+      <File FileName="EducalBack/ViewModels/Users/AddUserRoleVM.cs" Line="7" Column="37" />
+      <File FileName="EducalBack/Controllers/AccountController.cs" Line="66" Column="1" />
+      <File FileName="EducalBack/Areas/Admin/Views/Course/Edit.cshtml" Line="1" Column="16" />
+      <File FileName="EducalBack/ViewModels/Courses/CourseEditVM.cs" Line="6" Column="15" />
+      <File FileName="EducalBack/Areas/Admin/Controllers/CourseController.cs" Line="84" Column="70" />
+      <File FileName="EducalBack/Areas/Admin/Views/Course/Create.cshtml" Line="1" Column="1" />
+      <File FileName="EducalBack/Services/Interfaces/ICategoryService.cs" Line="19" Column="26" />
+      <File FileName="EducalBack/Services/CategoryService.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EducalBack" expanded="True">
+            <Node name="EducalBack" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True">
+                    <Node name="UserController.cs" selected="True" />
+                  </Node>
+                  <Node name="Views" expanded="True">
+                    <Node name="Category" expanded="True" />
+                    <Node name="Course" expanded="True" />
+                    <Node name="Dashboard" expanded="True" />
+                    <Node name="Shared" expanded="True" />
+                    <Node name="User" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="Enums" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="Accounts" expanded="True" />
+                <Node name="Courses" expanded="True" />
+                <Node name="Users" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/fatimagaykhanova/Desktop/EducalBack/EducalBack/Areas/Admin/Controllers/CategoryController.cs" relfile="EducalBack/Areas/Admin/Controllers/CategoryController.cs" line="130" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.EducalBack PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

@@ -1,0 +1,48 @@
+﻿@model RegisterVM
+<section id="register">
+    <div class="container mt-5">
+        <h1 class="text-center">Sign Up</h1>
+        <div class="text-danger" asp-validation-summary="ModelOnly">
+
+        </div>
+        <div class="register-form" style="width: 50%; margin: 100px auto; background-color: chartreuse; padding: 30px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; border-radius:10px;">
+            <form method="post" asp-controller="Account" asp-action="SignUp">
+                <div class="form-group mb-5">
+                    <label>Email address</label>
+                    <input autocomplete="off" asp-for="Email" type="text" class="form-control">
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+                <div class="form-group mb-5">
+                    <label>Username</label>
+                    <input autocomplete="off" asp-for="UserName" class="form-control">
+                    <span class="text-danger" asp-validation-for="UserName"></span>
+                </div>
+                <div class="form-group mb-5">
+                    <label>Full name</label>
+                    <input autocomplete="off" asp-for="FullName" class="form-control">
+                    <span class="text-danger" asp-validation-for="FullName"></span>
+                </div>
+                <div class="form-group mb-5">
+                    <label>Password</label>
+                    <input autocomplete="off" asp-for="Password" class="form-control">
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+                <div class="form-group mb-5">
+                    <label>Confirm Password</label>
+                    <input autocomplete="off" asp-for="ConfirmPassword" class="form-control">
+                    <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+                </div>
+
+                <div class="register-btn d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+                <a asp-action="SignIn"> Go to Sign In</a>
+
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/EducalBack.props" />
+</Project>

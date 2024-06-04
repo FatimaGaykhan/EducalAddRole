@@ -1,0 +1,307 @@
+@media screen and (max-width:575px) {
+    .educal {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+
+            .logo {
+                .category {
+                    display: none;
+                }
+            }
+
+            .fa-bars {
+                display: block;
+                color: #2b4eff;
+                font-size: 30px;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            form {
+                display: none;
+            }
+        }
+    }
+
+    #access {
+        .shape {
+            height: 100px;
+
+            .circle-2 {
+                right: 47px;
+                bottom: 31%;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .content {
+                h3 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 22px;
+                    padding-right: 0;
+                }
+            }
+
+            .all {
+                margin-top: 32px;
+                margin-left: 25px;
+
+                .image {
+                    .hero-shape {
+                        .hero-circle {
+                            right: -3%;
+                        }
+                        .circle {
+                            right: -8%;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .quote-animation {
+                        bottom: -29px;
+                        right: 8px;
+                    }
+                }
+
+                .hero-thumb {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #explore {
+        .container {
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h2 {
+                    margin-bottom: 44px;
+                }
+            }
+
+            .boxes {
+                display: flex;
+                flex-direction: column;
+
+                .box {
+                    width: 97%;
+                }
+            }
+        }
+    }
+
+    #courses {
+        .container {
+            .cards {
+                display: flex;
+                flex-direction: column;
+                padding: 0 12px;
+
+                .card {
+                    width: 100%;
+                    margin-bottom: 40px;
+
+                    .content {
+                        img {
+                            left: 76%;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #trending {
+        .container {
+            padding: 0 12px;
+
+            .title {
+                .tablist {
+                    width: 100%;
+                }
+            }
+
+            .cards {
+                .card {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .all {
+                display: flex;
+                flex-direction: column;
+
+                .cards {
+                    .card {
+                        width: 100%;
+
+                    }
+                }
+
+                .blog-sidebar {
+                    padding-left: 0;
+
+                    .sidebar-img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    #current {
+        .container {
+            .items {
+                .item {
+                    padding: 28px 50px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    #simple {
+        .container {
+            .teams {
+                display: flex;
+                flex-direction: column;
+                padding: 0 12px;
+
+                .team {
+                    width: 100%;
+                    margin-bottom: 30px;
+
+                    .offer {
+                        right: 2px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    #help {
+        .container {
+            left: 0;
+            padding: 0 12px;
+
+            .inner {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                padding: 50px 100px 53px 70px;
+
+                h3 {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    margin-left: 0;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .great {
+        #platform {
+            .container {
+                display: flex;
+                flex-direction: column;
+
+                .widget, .company {
+                    width: 100%;
+                    margin-left: 0;
+                    padding: 0 12px;
+                    margin-bottom: 50px;
+
+                    form {
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .theme {
+            .container {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #homecourse {
+        .container {
+            padding-top: 20%;
+            padding-left: 12px;
+
+            h3 {
+                font-size: 50px;
+            }
+        }
+    }
+
+    #intouch {
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            form {
+                width: 97%;
+                margin: 0 6px;
+                margin-bottom: 40px;
+            }
+            .inner {
+                width: 97%;
+                margin: 0 12px;
+
+                .shape {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #support {
+        .container {
+            .boxes {
+                display: flex;
+                flex-direction: column;
+                .box {
+                    width: 100%;
+                    margin-bottom: 30px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
